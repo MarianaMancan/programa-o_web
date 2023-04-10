@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <link rel='stylesheet' type='text/css' href='./projeto1.css' />
+  </head>
+  <body>
+    <form name = 'myForm' action='./tratador.php' method='POST'>
+    <table width='95%'>
+      <tr>
+        <td width='10%'></td>
+        <td ><h1> Formulários </h1></td>
+        <td width='10%'></td>
+     </tr>
+      <tr>
+        <td width='10%'></td>
+        <td ><h2>Logradouros</h2></td>
+        <td> <input type="image" src="./casa.png" ></td>
+        <td width='10%'></td>
+      </tr>
+      <tr  >
+        <td width='10%'></td>
+        <td><label for='pklogradouro'  class="textFormato">id logradouro:</label></td>
+        <td><input id='pklogradouro' type='number' name='pklogradouro' /></td>
+        <td width='10%'></td>
+      </tr>
+      <tr  >
+        <td width='10%'></td>
+        <td ><label for='fkcidade'  class="textFormato">Cidade</label></td>
+        <td >
+          <select id='fkcidade' name='fkcidade'>
+            <option value='1'>1</option>
+            <option value='2'>2</option>
+            <option value='3'>3</option>
+          </select>
+        </td>
+        <td ></td>
+      </tr>
+      <tr >
+        <td width='10%'></td>
+        <td><label for='txnomelogradouro'  class="textFormato">Nome logradouro:</label></td>
+        <td><input id='txnomelogradouro' type='text' name='txnomelogradouro'  placeholder='praça,rua...'/></td>
+        <td width='10%'></td>
+      </tr>
+      <tr >
+        <td width='10%'></td>
+        <td ><label for='dtcadlogradouro' class="textFormato" >Data de registro:</label></td>
+        <td ><input id='dtcadlogradouro' type='date' name='dtcadlogradouro' /></td>
+        <td width='10%'></td>
+      </tr>
+      <tr  >
+        <td width='10%'></td>
+        <td><label for='hrcadlogradouro'  class="textFormato">Hora de registro:</label></td>
+        <td ><input id='hrcadlogradouro' type='time' name='hrcadlogradouro' /></td>
+        <td width='10%'></td>
+      </tr>
+      <tr >
+        <td width='10%'></td>
+        <td ><label for='tiponegocio'  class="textFormato">Para:</label></td>
+        <td >
+            <input type='checkbox' name='tiponegocio' value='aluguel'>Aluguel<br>
+            <input type='checkbox' name='tiponegocio' value='venda'>Venda<br>
+            <input type='checkbox' name='tiponegocio' value='aluguelTemporada'>Aluguel temporada<br>
+       
+       </td>
+        <td width='10%'></td>
+      </tr>
+      <tr >
+        <td width='10%'></td>
+        <td><label for='tipologradouro'  class="textFormato">Tipo logradouro:</label></td>
+        <td>
+            <input type='radio' name='tipologradouro' value='casa'>Casa<br>
+            <input type='radio' name='tipologradouro' value='apartamento'>Aparatamento<br>
+            <input type='radio' name='tipologradouro' value='terreno'>Terreno<br>
+            <input type='radio' name='tipologradouro' value='chacara'>Chacara<br>
+        </td>
+       
+        <td width='10%'></td>
+      </tr>
+      <tr  >
+        <td width='10%'></td>
+        <td ><label for='corlogradouro'  class="textFormato">Cor logradouro:</label></td>
+        <td ><input id='corlogradouro' type='color' name='corlogradouro' /></td>
+        <td width='10%'></td>
+      </tr>
+      <tr  >
+        <td width='10%'></td>
+        <td> <label for='imglogradouro'  class="textFormato">Imagem logradouro:</label></td>
+        <td><input id='imglogradouro'  type='file' name='imglogradouro' multiple /></td>
+        <td width='10%'></td>
+      </tr>
+      <tr >
+        <td width='10%'></td>
+        <td ><label for='nomeProprietario'  class="textFormato">Nome proprietario:</label></td>
+        <td ><input id='nomeProprietario' type='text' name='nomeProprietario' /></td>
+        <td width='10%'></td>
+      </tr>
+      <tr >
+        <td width='10%'></td>
+        <td ><label for='senhaProprietario'  class="textFormato">Senha proprietario:</label></td>
+        <td ><input id='senaProprietario' type='password' name='senhaProprietario' /></td>
+        <td width='10%'></td>
+      </tr>
+      <tr  >
+        <td width='10%'></td>
+        <td><label for='emailProprietario'  class="textFormato">Email proprietario:</label></td>
+        <td><input id='emailProprietario' type='email' name='emailProprietario' /></td>
+        <td width='10%'></td>
+      </tr>
+    </tr>
+    <tr >
+      <td width='10%'></td>
+      <td ><label for='animais'  class="textFormato">Permiti animais:</label></td>
+      <td ><input type='range' id='animais' name='animais'
+        min='não' max='sim'></td>
+      <td width='10%'></td>
+    </tr>
+      <tr >
+        <td width='10%'></td>
+        <td><label for='telefoneProprietario'  class="textFormato">Telefone proprietario:</label></td>
+        <td><input id='telefoneProprietario' type='tel' name='telefoneProprietario'  pattern='[0-9]{2} [0-9]{5}-[0-9]{4}' placeholder='11 99999-9999' /></td>
+        <td width='10%'></td>
+      </tr>
+      <tr >
+        <td width='10%'></td>
+        <td ><label for='siteProprietario'  class="textFormato">Site:</label></td>
+        <td ><input id='siteProprietario' type='url' name='siteProprietario'  pattern='https://.*' placeholder='https://example.com' /></td>
+        <td width='10%'></td>
+      </tr>
+      <tr >
+        <td width='10%'></td>
+        <td ><label for='pesquisar'  class="textFormato">Pesquisar logradouro:</label></td>
+        <td ><input type='search' id='site-search' name='q'></td>
+        <td width='10%'></td>
+      </tr>
+      <tr >
+        <td width='10%'></td>
+        <td ><label for='datatime' class="textFormato">Data time:</label></td>
+        <td ><input id='datatime' type='datetime-local' name='datatime' /></td>
+        <td width='10%'></td>
+      </tr>
+      <tr >
+        <td width='10%'></td>
+        <td ><label for='mes'  class="textFormato">Mês:</label></td>
+        <td ><input id='mes' type='month' name='mes'/></td>
+        <td width='10%'></td>
+      </tr>
+      <tr >
+        <td width='10%'></td>
+        <td ><label for='week'  class="textFormato">Semana:</label></td>
+        <td ><input id='week' type='week' name='week'/></td>
+        <td width='10%'></td>
+      </tr>
+      <tr >
+        <td width='10%'></td>
+        <td ><label for='observacao'  class="textFormato">Observações:</label></td>
+        <td ><textarea id='observacao' name='observacao' rows='4' cols='50'></textarea></td>
+        <td width='10%'></td>
+      </tr>
+      <tr >
+        <td width='10%'></td>
+        <td ><input type='reset' value='Reset' class="buttonTransparent"></td>
+        <td ><input type='submit' value='Enviar' class="buttonTransparent"></td>
+        <td width='10%'></td>
+      </tr>
+    </table>
+    </form>
+    <hr width='80%' />
+    <center>&copy; - 2023 - FATEC - 4&ordm;ADS-Noite.</center>
+  </body>
+</html>

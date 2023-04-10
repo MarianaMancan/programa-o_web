@@ -1,0 +1,72 @@
+body {
+    background-color: #ffdead;
+}
+
+li {
+    font-family: Tahoma;
+    color: black;
+    font-size: 12px;
+}
+
+title {
+    font-family: Arial;
+    color: red;
+    font-size: 16px;
+}
+
+a:link {
+    font-family: TAHOMA;
+    color: blue;
+    font-size: 14px;
+}
+
+a:visited {
+    font-family: TAHOMA;
+    color: purple;
+    font-size: 14px;
+}
+
+td,
+tr {
+  border: none;
+  padding: 20px;
+  text-align: left;
+}
+
+th {
+  text-align: center;
+  font-family: Arial;
+  color: red;
+  font-size: 16px;
+}
+
+
+button{
+  background-color: transparent;
+  border:none;
+}
+
+#ancora {
+  text-align: left;
+}
+tdred {
+  color: red;
+  font-family: Arial;
+  font-size: 16px;
+  text-align: center;
+}
+
+ancora{
+    text-align: left;
+}
+
+#frame{
+border:none;
+height: 15vh;
+width: 100vw;
+}
+h1{
+  color: red;
+  font-family: arial;
+  font-size:16px;
+}
