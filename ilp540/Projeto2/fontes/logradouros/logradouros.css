@@ -1,0 +1,43 @@
+body           { font-family: TAHOMA, Arial, sans-serif; font-size: 14px; color:black; }
+body.consultar     { background-color:#50C4B7; }
+body.excluir       { background-color:#FD6161; }
+body.incluir       { background-color:#00FFD9; }
+body.alterar       { background-color:#F39D60; }
+body.listar        { background-color:#E5A678; }
+body.abertura      { background-color:#FFDEAD; }
+body.white         { background-color:#FFFFFF; }
+body.lightgreen    { background-color:#90EE90; }
+
+button         { background-color:transparent;
+                 font-family: TAHOMA, Arial, sans-serif; font-size:16px;
+                 color:black;
+                 text-align:center;
+                 border: none;
+                 padding:0px 10px 0px 10px;
+                 margin:7px -3px -3px -3px;
+                 width:85px; height:23px;
+                 cursor:pointer;
+                 border-radius: 10px 10px 0px 0px; }
+table,td       { border:none; font-family:Lucida Sans Typewriter; font-size:12px; }
+table.borda    { border:1px solid black; border-collapse: collapse; }
+td.borda       { border:1px solid black; border-collapse: collapse; vertical-align: text-top; }
+
+input.imp      { background-color:transparent;
+                 font-family: TAHOMA, Arial, sans-serif; font-size:16px;
+                 color:black;
+                 text-align:center;
+                 border: none;
+                 padding:0px 10px 0px 10px;
+                 margin:7px -3px -3px -3px;
+                 width:85px; height:23px;
+                 cursor:pointer;
+                 border-radius: 10px 10px 0px 0px; }
+
+button.con{background-color:#50C4B7;}
+button.ins{background-color:#00FFD9;}
+button.alt{background-color:#F39D60;}
+button.del{background-color:#FD6161;}
+button.lst{background-color:#E5A678;}
+.menubtn{background-color: #FFDEAD; position: absolute; top:0px; left:0px; right:0px; height: 30px;}
+.menu{height: 60px;}
+.titulo{ font-family: TAHOMA, Arial, sans-serif; font-size: 18px; color:red; font-weight:bold; height: 30px; position: relative; top:23px; left:0px;}
