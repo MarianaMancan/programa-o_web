@@ -17,7 +17,7 @@ function iniciapagina($fundo,$tittab,$tabela,$acao)
 function terminapagina($tabela,$acao,$prg)
 {
   # Função.....: terminapagina
-  printf(" <hr>$tabela %s | &copy; ".date('Y')." - Mariana Frederico Mançan FATEC-4ºADS | $prg",$acao? " - ".$acao : "");
+  printf(" <hr ><spam class='margem1'>$tabela %s | &copy; ".date('Y')." - Mariana Frederico Mançan FATEC-4ºADS | $prg",$acao? " - ".$acao : "</spam>");
   printf(" </body>\n");
   printf("</html>");
 }
@@ -29,7 +29,7 @@ function conectamariadb($server,$username,$senha,$dbname)
 }
 
 conectamariadb("localhost","root","","ilp540");
-
+#conectamariadb("127.0.0.1","root","rosemeiremario","ilp540");
 
 ?>
 

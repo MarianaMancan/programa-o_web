@@ -35,7 +35,7 @@ switch (TRUE)
     printf(" <form action='./logradouroListar.php' method='post'>\n");
     printf("  <input type='hidden' name='bloco' value=2>\n");
     printf("  <input type='hidden' name='sair' value='$sair'>\n");
-    printf("  <table>\n");
+    printf("  <table class ='table1'>\n");
     printf("   <tr><td colspan=2>Escolha a <negrito>ordem</negrito> como os dados serão exibidos no relatório:</td></tr>\n");
     printf("   <tr><td>Código do Logradouro.:</td><td>(<input type='radio' name='ordem' value='l.pklogradouro'>)</td></tr>\n");
     printf("   <tr><td>Nome do Logradouro...:</td><td>(<input type='radio' name='ordem' value='l.txnomelogradouro' checked>)</td></tr>\n");

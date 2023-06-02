@@ -16,7 +16,6 @@ function picklist($acao)
   $prg=($acao=="Consultar")?"logradouroConsultar.php":(($acao=="Alterar")?"logradouroAlterar.php":"logradouroExcluir.php");
   $cmdsql= "SELECT `pklogradouro`, `fkcidade`, `txnomelogradouro`, `fklogradourotipo`, `dtcadlogradouro` FROM logradouros";
   $execcmd=mysqli_query($link,$cmdsql);
-
   $sair=$_REQUEST['sair']+1;
   $menu=$_REQUEST['sair'];
   $btacao=($acao=="Consultar") ? "Consultar" : (($acao=="Alterar") ? "Alterar": "Excluir" ); 
@@ -24,9 +23,9 @@ function picklist($acao)
   printf("  <form action='./$prg' method='POST'>\n");
   printf("  <input type='hidden' name='bloco' value='2'>\n");
   printf("  <input type='hidden' name='sair' value='$sair'>\n");
-  printf("Escolha um logradouro: ");
-  printf("<select name='pklogradouro'>\n");
-
+  printf("<spam class='margem1'>Escolha um logradouro: </spam>");
+  printf("<select name='pklogradouro' >\n");
+  
   $ceespec="";
   while ( $registro=mysqli_fetch_array($execcmd) )
   { # laço para 'montar' as linhas de option da picklist
@@ -61,7 +60,7 @@ function mostraregistro($CP)
   $registro=mysqli_fetch_array($execcmd);
 
 printf("   <table>\n");
-printf("    <tr><td>Código:</td>             <td>$$registro[pklogradouro]</td></tr>\n");
+printf("    <tr><td>Código:</td>             <td>$registro[pklogradouro]</td></tr>\n");
 printf("    <tr><td>cidade:</td>                 <td>$registro[txnomecidade]($registro[fkcidade])</td></tr>\n");
 printf("    <tr><td>Nome logradouro:</td>                <td>$registro[txnomelogradouro]</td></tr>\n");
 printf("    <tr><td>Tipo Logradouro:</td>      <td>$registro[txnometipologradouro]-($registro[fklogradourotipo])</td></tr>\n");
@@ -81,7 +80,7 @@ function montamenu($acao,$sair)
   #--------------------------------------------------------------------------------------------------------------------------------------------------
   printf("<div class='$acao'>\n");
   printf(" <div class='menu'>\n");
-  printf(" <form action='' method='POST'>\n");
+  printf(" <form class='menu-form' action='' method='POST'>\n");
   # A definição da variável a seguir
   printf("  <input type='hidden' name='sair' value='$sair'>\n");
   printf("<titulo>Logradouros</titulo>:\n");
@@ -98,8 +97,8 @@ function montamenu($acao,$sair)
   printf("<input class='imp' type='button' value='Sair' onclick='history.go(-$sair)'>\n");
   printf(" </form>\n");
   printf("</div>\n");
-  printf("<redbold>$acao</redbold><hr>\n");
-  printf("</div>\n<br><br><br>\n");
+  printf("<p class ='titulo'>$acao</p><hr>\n");
+  printf("</div>\n<br>\n");
 }
 
 function botoes($acao,$limpar,$voltar)

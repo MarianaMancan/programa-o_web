@@ -41,7 +41,7 @@ switch (TRUE)
 	# Os campos do form devem aparecer na coluna da DIREITA de uma tabela.
     # Na coluna da ESQUERDA se exibe os textos que devem orientar o usuÃ¡rio na digitaÃ§Ã£o de valores nos campos.
     # Os campos do form podem ser preenchidos com os valores do registro de mÃ©dicos atravÃ©s do uso do atributo HTML 'value'.
-    printf("<table>");
+    printf("<table class ='table1'>");
     printf("<tr><td>Nome logradouro:</td>              <td><input type='text' name='txnomelogradouro' value='$reglido[txnomelogradouro]' size='50' maxlength='200'></td></tr>\n");
     printf("<tr><td>Cidade:</td>     <td>");
     $cmdsql="SELECT pkcidade,txnomecidade from cidades order by txnomecidade ";

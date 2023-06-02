@@ -1,4 +1,6 @@
-body           { font-family: TAHOMA, Arial, sans-serif; font-size: 14px; color:black; }
+*{padding: 0;
+margin: 0;}
+body           { font-family: TAHOMA, Arial, sans-serif; font-size: 14px; color:black;}
 body.consultar     { background-color:#50C4B7; }
 body.excluir       { background-color:#FD6161; }
 body.incluir       { background-color:#00FFD9; }
@@ -39,5 +41,8 @@ button.alt{background-color:#F39D60;}
 button.del{background-color:#FD6161;}
 button.lst{background-color:#E5A678;}
 .menubtn{background-color: #FFDEAD; position: absolute; top:0px; left:0px; right:0px; height: 30px;}
-.menu{height: 60px;}
-.titulo{ font-family: TAHOMA, Arial, sans-serif; font-size: 18px; color:red; font-weight:bold; height: 30px; position: relative; top:23px; left:0px;}
+.menu{height: 30px;}
+.titulo{ font-family: TAHOMA, Arial, sans-serif; font-size: 18px; color:red; font-weight:bold;  top:23px; left:5px;margin-left: 5px;}
+.menu-form { background-color: #FFDEAD;height: 30px;}
+.table1{margin-left: 5px;}
+.margem1{margin-left: 5px;}

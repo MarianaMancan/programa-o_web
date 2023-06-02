@@ -21,16 +21,16 @@ $menu=$sair-1;
 # printf("$sair<br>\n");
 iniciapagina(TRUE,"logradouros","logradouros","Abertura");
 montamenu("Abertura",$sair);
-printf("<texto>\n");
-printf("Sistema desenvolvido por Mariana Frederico Mançan - RA:0210482123027.<br>\n");
-printf("Na displina de programação web na instituição Fatec ourinhos.<br>\n");
-printf("Este sistema faz o Gerenciamento de dados da Tabela logradouros.<br>\n");
-printf("Permintindo ao usuario consultar,alterar,incluir,excluir e listar logradouros.<br>\n");
-printf("<u>Incluir</u>-PA que coleta dados (em campos de um formulário) e grava em uma tabela.<br>\n"); # <icog>&#x1f7a5;</icog>
-printf("<u>Excluir</u>-PA que permite escolher um registro de uma tabela e excluir a linha escolhida da tabela.<br>\n"); # <icog>&#x1f7ac;</icog>
-printf("<u>Consultar</u>-PA que permite escolher um registro de uma tabela e mostra os dados dos registro escolhido.<br>\n"); # <icog>&#x1f50d;&#xfe0e;</icog>
-printf("<u>Listar</u> -PA que permite escolher dados e ordenação para emitir uma listagem de dados da tabela.<br>\n"); # <icog>&#x1f5a8;</icog>
-printf("<u>Alterar</u>-PA que permite escolher um registro de uma tabela e executar a alteração de valores do mesmo registro.<br>\n"); # <icog>&#x1f589;</icog>
-printf("</texto>\n");
+printf("<p class='margem1'>\n");
+printf("Mariana Frederico Mançan - RA: 0210482123027, desenvolvimento de um sistema de gerenciamento de dados de logradouros<br>\n");
+printf("como parte da disciplina de Programação Web na Fatec Ourinhos...<br>\n");
+printf("Este sistema permite que os usuários realizem diversas operações, como consultar, alterar, incluir, excluir e listar logradouros.<br>\n");
+printf("A funcionalidade de inclusão (Incluir-PA) coleta dados por meio de campos de um formulário e os grava em uma tabela, possibilitando adicionar novos logradouros ao sistema.<br>\n"); # <icog>&#x1f7a5;</icog>
+printf("A funcionalidade de exclusão (Excluir-PA) permite ao usuário escolher um registro da tabela de logradouros e exclui a linha correspondente da tabela, possibilitando remover logradouros existentes do sistema.<br>\n"); # <icog>&#x1f7ac;</icog>
+printf("A funcionalidade de consulta (Consultar-PA) permite ao usuário selecionar um registro da tabela de logradouros e exibir os dados desse registro específico, fornecendo informações detalhadas sobre um logradouro no sistema.\n"); # <icog>&#x1f50d;&#xfe0e;</icog>
+printf("A funcionalidade de listagem (Listar-PA) permite ao usuário selecionar os dados desejados e a ordem de exibição para gerar uma lista de dados da tabela de logradouros, possibilitando obter uma lista personalizada de logradouros com base em critérios específicos, como ordenação alfabética ou filtragem por campos específicos.<br>\n"); # <icog>&#x1f5a8;</icog>
+printf("A funcionalidade de alteração (Alterar-PA) permite ao usuário escolher um registro da tabela de logradouros e realizar a alteração dos valores desse registro, possibilitando a atualização das informações de um logradouro existente no sistema.<br>\n"); # <icog>&#x1f589;</icog>
+printf("Essas funcionalidades fornecem ao usuário um amplo conjunto de operações para gerenciar eficientemente os dados dos logradouros.");
+printf("</p>\n");
 terminapagina("Logradouros","Abertura","logradouros.php");
 ?>

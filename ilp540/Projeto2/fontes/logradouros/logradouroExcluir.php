@@ -31,7 +31,8 @@ switch(true)
    
     
   }
-  case($bloco==3):{
+  case($bloco==3):
+    {
 
     # Tratamento da transação
         # montando o comando SQL que será 'submetido' ao SGBD.
@@ -48,6 +49,9 @@ switch(true)
              mysqli_query($link,"COMMIT");
              $tenta=FALSE;
              $mens="Registro com código $_REQUEST[pklogradouro] excluído!";
+             $mostrar=TRUE;
+          
+            
            }
            else
            {
@@ -66,7 +70,7 @@ switch(true)
        
        # a variável $mens contém a mensagem que vai ser exibida de qualquer modo de saída do laço.
        printf("$mens<br>\n");
-       botoes("Excluir",FALSE,TRUE);
+       
     
        
          break;

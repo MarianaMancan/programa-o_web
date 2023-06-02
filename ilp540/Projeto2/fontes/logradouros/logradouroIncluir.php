@@ -32,7 +32,7 @@ switch (TRUE)
     printf("  <form action='logradouroIncluir.php' method='POST'>\n");
     printf("  <input type='hidden' name='bloco' value='2'>\n");
     printf("  <input type='hidden' name='sair' value='$sair'>\n");
-    printf("  <table>\n");
+    printf("  <table class='table1'>\n");
     printf("   <tr><td>Código:</td>         <td>O código será  gerado pelo Sistema</td></tr>\n");
     printf("   <tr><td>Nome logradouro:</td>           <td><input type='text' name='txnomelogradouro' placeholder='' size=50 maxlength=200></td></tr>\n");
    
@@ -98,6 +98,7 @@ switch (TRUE)
         $tenta=FALSE;
         $mostrar=TRUE;
         $mens="Registro inclui­do!";
+        botoes("",FALSE,TRUE);
       }
       else
       {
